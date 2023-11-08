@@ -5,9 +5,11 @@ import { GiModernCity, GiBackpack, GiHiking } from "react-icons/gi";
 import { TbBeach, TbSailboat } from "react-icons/tb";
 import { MdFastfood } from "react-icons/md";
 
+import camera from "../../../Assets/BrowseByCategory/camera.png";
+
 const BrowseByCategory = () => {
   return (
-    <div className="py-[80px] border border-black">
+    <div className="py-[80px] relative">
       <h2
         className={`${styles.browseCategory} text-center text-2xl text-sky-800 mb-4`}
       >
@@ -15,6 +17,13 @@ const BrowseByCategory = () => {
       </h2>
 
       <h2 className="text-center text-4xl font-bold mb-16">Pick A Tour Type</h2>
+
+      <img
+        src={camera}
+        className="w-[100px] absolute top-[100px] right-[100px] lg:right-[200px] xl:right-[300px] 2xl:right-[400px]"
+        alt=""
+        srcset=""
+      />
 
       <div className="flex justify-center items-center gap-16">
         <div className="flex flex-col items-center">
