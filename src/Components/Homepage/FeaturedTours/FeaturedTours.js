@@ -80,7 +80,7 @@ const FeaturedTours = () => {
     },
   ];
   return (
-    <div className={`bg-blue-900 py-20`}>
+    <div className={`bg-blue-900 py-20 mb-[200px]`}>
       <h2 className={`${styles.featured} text-white text-center text-2xl mb-4`}>
         Tours
       </h2>
@@ -97,14 +97,19 @@ const FeaturedTours = () => {
         spaceBetween={20}
         breakpoints={{
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
+
           1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1280: {
             slidesPerView: 3,
             spaceBetween: 50,
           },
-          1600: {
+          1536: {
             slidesPerView: 4,
             spaceBetween: 50,
           },
@@ -136,7 +141,9 @@ const FeaturedTours = () => {
                     {places?.place}
                   </h2>
 
-                  <h2 className="text-2xl font-bold mb-4">{places?.title}</h2>
+                  <h2 className={`${styles.textFlow} text-2xl font-bold mb-4`}>
+                    {places?.title}
+                  </h2>
 
                   <div className="flex justify-between items-center gap-2 mb-6">
                     <div className="flex items-center gap-3">

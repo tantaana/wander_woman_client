@@ -10,3 +10,12 @@
 .featured {
   font-family: "Kaushan Script", cursive;
 }
+
+/* If you want to have text ellipse after 3 line, use this code */
+.textFlow {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  height: 90px;
+}
