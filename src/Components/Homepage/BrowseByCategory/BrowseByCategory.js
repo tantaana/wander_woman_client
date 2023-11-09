@@ -9,7 +9,7 @@ import camera from "../../../Assets/BrowseByCategory/camera.png";
 
 const BrowseByCategory = () => {
   return (
-    <div className="py-[80px] relative">
+    <div className="py-[80px] relative mb-[200px] mx-4">
       <h2
         className={`${styles.browseCategory} text-center text-2xl text-sky-800 mb-4`}
       >
@@ -25,7 +25,7 @@ const BrowseByCategory = () => {
         srcset=""
       />
 
-      <div className="flex justify-center items-center gap-16">
+      <div className="flex flex-wrap justify-center items-center gap-28">
         <div className="flex flex-col items-center">
           <h2 className="text-3xl bg-yellow-400 p-4 rounded-full mb-2">
             <GiModernCity />
