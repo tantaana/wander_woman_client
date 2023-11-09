@@ -7,7 +7,7 @@ import { TiTick } from "react-icons/ti";
 
 const WhyChooseUs = () => {
   return (
-    <div className="mx-4 relative">
+    <div className="mx-4 mb-[200px] relative">
       <div className="flex justify-center items-center gap-20">
         <div className="bg-blue-600 min-w-[450px] min-h-[450px] flex flex-col items-end gap-2">
           <div className="bg-yellow-400 max-w-[400px] max-h-[400px]">
