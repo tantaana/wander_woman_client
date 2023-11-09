@@ -8,17 +8,17 @@ import { TiTick } from "react-icons/ti";
 const WhyChooseUs = () => {
   return (
     <div className="mx-4 mb-[200px] relative">
-      <div className="flex justify-center items-center gap-20">
-        <div className="bg-blue-600 min-w-[450px] min-h-[450px] flex flex-col items-end gap-2">
-          <div className="bg-yellow-400 max-w-[400px] max-h-[400px]">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-20">
+        <div className="bg-blue-600 w-[300px] h-[300px] sm:min-w-[450px] sm:min-h-[450px] flex flex-col items-end gap-2">
+          <div className="bg-yellow-400 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px]">
             <img
               src={man}
-              className="w-[400px] relative bottom-12 right-6"
+              className="w-[250px] sm:w-[400px] relative bottom-8 sm:bottom-12 right-4 sm:right-6"
               alt=""
             />
           </div>
 
-          <div className="flex items-center gap-3 min-w-[400px]">
+          <div className="flex items-center gap-3 w-[250px] sm:min-w-[400px]">
             <h2 className={`${styles.whyChoose} text-3xl text-white`}>10+</h2>
             <h2 className="text-white font-medium">Years of Experience</h2>
           </div>

@@ -25,7 +25,7 @@ const BrowseByCategory = () => {
         srcset=""
       />
 
-      <div className="flex flex-wrap justify-center items-center gap-28">
+      <div className="flex flex-wrap justify-center items-center gap-12 lg:gap-16 xl:gap-20 2xl:gap-28">
         <div className="flex flex-col items-center">
           <h2 className="text-3xl bg-yellow-400 p-4 rounded-full mb-2">
             <GiModernCity />

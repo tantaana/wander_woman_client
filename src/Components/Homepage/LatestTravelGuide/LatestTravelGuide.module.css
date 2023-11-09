@@ -2,6 +2,8 @@
   font-family: "Kaushan Script", cursive;
 }
 
-.rotateText {
-  transform: rotate(-90deg);
+@media (min-width: 400px) {
+  .rotateText {
+    transform: rotate(-90deg);
+  }
 }

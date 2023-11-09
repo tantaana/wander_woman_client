@@ -10,7 +10,7 @@ import france from "../../../Assets/Destination/france.webp";
 
 const Destination = () => {
   return (
-    <div className="mx-4 mb-[200px] flex justify-center">
+    <div className="mx-10 mb-[200px] flex flex-col md:flex-row justify-center">
       <div>
         <div className="flex items-center justify-between mb-12">
           <div>
@@ -21,7 +21,7 @@ const Destination = () => {
             <h2 className="text-4xl font-bold">Top Destinations</h2>
           </div>
 
-          <div className="flex items-center gap-3 hover:text-orange-500 duration-300 ease-in-out hover:cursor-pointer">
+          <div className="hidden sm:flex items-center gap-3 hover:text-orange-500 duration-300 ease-in-out hover:cursor-pointer">
             <h2 className="text-lg font-bold">See All</h2>
             <AiOutlineArrowRight className="text-xl font-bold" />
           </div>
@@ -29,7 +29,7 @@ const Destination = () => {
 
         {/* Card */}
         <div
-          className={`${styles.divContainer} flex flex-wrap justify-center gap-16`}
+          className={`${styles.divContainer} flex flex-wrap justify-center gap-4 lg:gap-6 xl:gap-10 2xl:gap-16`}
         >
           <div className="hover:bg-yellow-200 duration-300 ease-in-out hover:cursor-pointer p-3">
             <div className={`${styles.imgContainer}`}>
@@ -63,6 +63,11 @@ const Destination = () => {
             <h2 className="text-gray-500 font-medium">3,25,220 Travellers</h2>
           </div>
         </div>
+      </div>
+
+      <div className="mt-10 flex sm:hidden justify-center items-center gap-3 hover:text-orange-500 duration-300 ease-in-out hover:cursor-pointer">
+        <h2 className="text-lg font-bold">See All</h2>
+        <AiOutlineArrowRight className="text-xl font-bold" />
       </div>
     </div>
   );

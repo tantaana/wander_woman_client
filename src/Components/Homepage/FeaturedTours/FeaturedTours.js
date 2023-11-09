@@ -157,7 +157,7 @@ const FeaturedTours = () => {
                       </h2>
                     </div>
 
-                    <div className="flex items-center gap-1">
+                    <div className="flex flex-col sm:flex-row items-center gap-1">
                       <BiTimeFive className="text-gray-500 text-xl" />
                       <h2 className="text-gray-500 font-medium">
                         {places?.days} days

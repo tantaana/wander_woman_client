@@ -60,13 +60,17 @@ const LatestTravelGuide = () => {
       </h2>
 
       <div className="flex justify-center mb-32">
-        <div className="max-w-[1400px] grid grid-cols-2 gap-16">
+        <div className="max-w-[1400px] grid grid-cols-1 xl:grid-cols-2 gap-16">
           {travels?.map((travel) => (
-            <div className="flex items-center gap-6">
-              <img src={travel?.img} className="w-[400px]" alt="" />
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <img
+                src={travel?.img}
+                className="w-[350px] 2xl:w-[400px]"
+                alt=""
+              />
 
               <div>
-                <div className="flex items-center gap-6 mb-4">
+                <div className="flex flex-wrap items-center gap-4 2xl:gap-6 mb-4">
                   <h2 className="text-gray-500 font-medium">{travel?.date}</h2>
                   <h2 className="text-gray-500 font-medium">• {travel?.who}</h2>
                 </div>
@@ -78,7 +82,7 @@ const LatestTravelGuide = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-6">
+      <div className="flex flex-wrap justify-center items-center gap-6">
         <div
           className={`${styles.rotateText} flex items-center justify-center gap-2`}
         >
@@ -88,27 +92,27 @@ const LatestTravelGuide = () => {
 
         <img
           src={travel1}
-          className="w-[250px] h-[250px] object-cover"
+          className="w-[200px] sm:w-[250px] h-[200px] sm:h-[250px] object-cover"
           alt=""
         />
         <img
           src={travel2}
-          className="w-[250px] h-[250px] object-cover"
+          className="w-[200px] sm:w-[250px] h-[200px] sm:h-[250px] object-cover"
           alt=""
         />
         <img
           src={travel3}
-          className="w-[250px] h-[250px] object-cover"
+          className="w-[200px] sm:w-[250px] h-[200px] sm:h-[250px] object-cover"
           alt=""
         />
         <img
           src={travel4}
-          className="w-[250px] h-[250px] object-cover"
+          className="w-[200px] sm:w-[250px] h-[200px] sm:h-[250px] object-cover"
           alt=""
         />
         <img
           src={travel5}
-          className="w-[250px] h-[250px] object-cover"
+          className="w-[200px] sm:w-[250px] h-[200px] sm:h-[250px] object-cover"
           alt=""
         />
       </div>

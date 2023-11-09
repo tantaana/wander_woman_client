@@ -16,12 +16,12 @@ const OurTrustedPartners = () => {
         Our Trusted Partners
       </h2>
 
-      <div className="flex justify-center items-center gap-16">
-        <img src={bd} className="w-[250px]" alt="" />
-        <img src={etihad} className="w-[250px]" alt="" />
-        <img src={emirates} className="w-[250px]" alt="" />
-        <img src={qatar} className="w-[250px]" alt="" />
-        <img src={british} className="w-[250px]" alt="" />
+      <div className="flex flex-wrap justify-center items-center gap-16">
+        <img src={bd} className="w-[180px] lg:w-[250px]" alt="" />
+        <img src={etihad} className="w-[180px] lg:w-[250px]" alt="" />
+        <img src={emirates} className="w-[180px] lg:w-[250px]" alt="" />
+        <img src={qatar} className="w-[180px] lg:w-[250px]" alt="" />
+        <img src={british} className="w-[180px] lg:w-[250px]" alt="" />
       </div>
     </div>
   );

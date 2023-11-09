@@ -40,120 +40,122 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div className="flex justify-center mx-4 mb-[200px]">
-      <div className="max-w-[1300px] grid grid-cols-4 gap-16">
-        <div className="flex flex-col justify-center">
-          <div className="flex justify-center">
-            <img
-              src={man1}
-              className="w-[80px] h-[80px] rounded-full object-cover"
-              alt=""
-            />
+    <div className="mx-4 mb-[200px]">
+      <h2
+        className={`${styles.testimonial} text-center text-2xl text-sky-800 mb-4`}
+      >
+        Testimonial
+      </h2>
+
+      <h2 className="text-center text-4xl font-bold mb-16">
+        What Our Customers
+        <br />
+        Says About Us
+      </h2>
+
+      <div className="md:flex md:justify-center">
+        <div className="max-w-[1000px] flex flex-col md:grid md:grid-cols-4 gap-6 lg:gap-10">
+          <div className="flex md:flex-col justify-center">
+            <div className="md:flex md:justify-center">
+              <img
+                src={man1}
+                className="w-[80px] h-[80px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <div className="md:flex md:justify-start">
+              <img
+                src={woman1}
+                className="w-[60px] h-[60px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <div className="md:flex md:justify-end">
+              <img
+                src={man2}
+                className="w-[120px] h-[120px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <div className="md:flex md:justify-start">
+              <img
+                src={woman2}
+                className="w-[100px] h-[100px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
           </div>
 
-          <div className="flex justify-start">
-            <img
-              src={woman1}
-              className="w-[60px] h-[60px] rounded-full object-cover"
-              alt=""
-            />
+          <div className="md:col-span-2">
+            <Swiper
+              pagination={{
+                dynamicBullets: true,
+              }}
+              slidesPerView={1}
+              spaceBetween={20}
+              loop={true}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              modules={[Pagination, Autoplay]}
+              className={`${styles.mainDiv} mySwiper`}
+            >
+              {reviews?.map((review, i) => {
+                return (
+                  <SwiperSlide key={i} className="">
+                    <div>
+                      <FaQuoteRight className="w-full text-center text-4xl text-yellow-400 mb-10" />
+                      <h2 className="text-center text-lg font-bold mb-4">
+                        "{review?.review}"
+                      </h2>
+
+                      <h2 className="text-center font-medium text-gray-500">
+                        -By {review?.name}
+                      </h2>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
 
-          <div className="flex justify-end">
-            <img
-              src={man2}
-              className="w-[120px] h-[120px] rounded-full object-cover"
-              alt=""
-            />
-          </div>
+          <div className="flex md:flex-col justify-center">
+            <div className="md:flex md:justify-center">
+              <img
+                src={man3}
+                className="w-[80px] h-[80px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
 
-          <div className="flex justify-start">
-            <img
-              src={woman2}
-              className="w-[100px] h-[100px] rounded-full object-cover"
-              alt=""
-            />
-          </div>
-        </div>
+            <div className="md:flex md:justify-end">
+              <img
+                src={woman3}
+                className="w-[60px] h-[60px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
 
-        <div className="col-span-2 py-10">
-          <h2
-            className={`${styles.testimonial} text-center text-2xl text-sky-800 mb-4`}
-          >
-            Testimonial
-          </h2>
+            <div className="md:flex md:justify-start">
+              <img
+                src={man4}
+                className="w-[120px] h-[120px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
 
-          <h2 className="text-center text-4xl font-bold mb-16">
-            What Our Customers
-            <br />
-            Says About Us
-          </h2>
-
-          <Swiper
-            pagination={{
-              dynamicBullets: true,
-            }}
-            slidesPerView={1}
-            spaceBetween={20}
-            loop={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            modules={[Pagination, Autoplay]}
-            className={`${styles.mainDiv} mySwiper`}
-          >
-            {reviews?.map((review, i) => {
-              return (
-                <SwiperSlide key={i} className="">
-                  <div>
-                    <FaQuoteRight className="w-full text-center text-4xl text-yellow-400 mb-10" />
-                    <h2 className="text-center text-lg font-bold mb-4">
-                      "{review?.review}"
-                    </h2>
-
-                    <h2 className="text-center font-medium text-gray-500">
-                      -By {review?.name}
-                    </h2>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
-
-        <div className="flex flex-col justify-center">
-          <div className="flex justify-center">
-            <img
-              src={man3}
-              className="w-[80px] h-[80px] rounded-full object-cover"
-              alt=""
-            />
-          </div>
-
-          <div className="flex justify-end">
-            <img
-              src={woman3}
-              className="w-[60px] h-[60px] rounded-full object-cover"
-              alt=""
-            />
-          </div>
-
-          <div className="flex justify-start">
-            <img
-              src={man4}
-              className="w-[120px] h-[120px] rounded-full object-cover"
-              alt=""
-            />
-          </div>
-
-          <div className="flex justify-end">
-            <img
-              src={woman4}
-              className="w-[100px] h-[100px] rounded-full object-cover"
-              alt=""
-            />
+            <div className="md:flex md:justify-end">
+              <img
+                src={woman4}
+                className="w-[100px] h-[100px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>

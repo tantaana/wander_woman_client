@@ -9,8 +9,8 @@ import logo from "../../Assets/Navbar/logo.png";
 const Footer = () => {
   return (
     <div className="bg-black">
-      <div className="grid grid-cols-3 gap-4 px-32 py-32">
-        <div className="flex justify-center">
+      <div className="xl:grid xl:grid-cols-3 gap-4 px-6 sm:px-24 xl:px-32 py-20 xl:py-32">
+        <div className="mb-14 xl:flex justify-center">
           <div>
             <img src={logo} className="w-[120px] mb-10" alt="" />
 
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center border-l border-r border-gray-600">
+        <div className="mb-14 xl:flex justify-center items-center xl:border-l xl:border-r xl:border-gray-600">
           <div className="grid grid-cols-2 gap-16">
             <div className="flex flex-col items-start">
               <h2 className={`${styles.footerText} text-white mb-6`}>
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center">
+        <div className="xl:flex justify-center items-center">
           <div className="flex flex-col items-start">
             <h2 className={`${styles.footerText} text-white mb-6`}>
               Sign Up Newsletter

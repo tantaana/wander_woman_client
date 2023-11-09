@@ -7,7 +7,7 @@ import { FaUmbrellaBeach } from "react-icons/fa";
 const ReadyToTravel = () => {
   return (
     <div
-      className={`${styles.bgImg} py-32 px-8 flex items-center justify-center gap-24`}
+      className={`${styles.bgImg} py-32 px-4 sm:px-8 flex flex-col lg:flex-row items-center justify-center gap-24`}
     >
       <div>
         <MdPlayCircleOutline className="text-5xl text-yellow-400 mb-8" />
