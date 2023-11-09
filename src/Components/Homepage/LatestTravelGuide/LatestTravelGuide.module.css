@@ -1,0 +1,7 @@
+.travelGuide {
+  font-family: "Kaushan Script", cursive;
+}
+
+.rotateText {
+  transform: rotate(-90deg);
+}

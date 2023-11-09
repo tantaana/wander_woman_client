@@ -6,6 +6,8 @@ import FeaturedTours from "../../Components/Homepage/FeaturedTours/FeaturedTours
 import WhyWeAreBest from "../../Components/Homepage/WhyWeAreBest/WhyWeAreBest";
 import Testimonial from "../../Components/Homepage/Testimonial/Testimonial";
 import ReadyToTravel from "../../Components/Homepage/ReadyToTravel/ReadyToTravel";
+import OurTrustedPartners from "../../Components/Homepage/OurTrustedPartners/OurTrustedPartners";
+import LatestTravelGuide from "../../Components/Homepage/LatestTravelGuide/LatestTravelGuide";
 
 const Homepage = () => {
   return (
@@ -17,6 +19,8 @@ const Homepage = () => {
       <WhyWeAreBest />
       <Testimonial />
       <ReadyToTravel />
+      <OurTrustedPartners />
+      <LatestTravelGuide />
     </div>
   );
 };
