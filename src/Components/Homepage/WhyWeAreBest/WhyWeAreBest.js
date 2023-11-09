@@ -8,7 +8,7 @@ import travel3 from "../../../Assets/WhyWeAreBest/travel3.jpg";
 
 const WhyWeAreBest = () => {
   return (
-    <div className="">
+    <div className="mx-4 mb-[200px]">
       <div className="grid grid-cols-2 gap-6">
         <div className="flex justify-center">
           <div>

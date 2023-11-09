@@ -4,6 +4,7 @@ import WhyChooseUs from "../../Components/Homepage/WhyChooseUs/WhyChooseUs";
 import Destination from "../../Components/Homepage/Destination/Destination";
 import FeaturedTours from "../../Components/Homepage/FeaturedTours/FeaturedTours";
 import WhyWeAreBest from "../../Components/Homepage/WhyWeAreBest/WhyWeAreBest";
+import Testimonial from "../../Components/Homepage/Testimonial/Testimonial";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Destination />
       <FeaturedTours />
       <WhyWeAreBest />
+      <Testimonial />
     </div>
   );
 };
