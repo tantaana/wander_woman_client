@@ -33,7 +33,7 @@ const Destination = () => {
         >
           <div className="hover:bg-yellow-200 duration-300 ease-in-out hover:cursor-pointer p-3">
             <div className={`${styles.imgContainer}`}>
-              <img src={UK} className="border border-black " alt="" />
+              <img src={UK} alt="" />
             </div>
             <h2 className="text-xl font-bold mb-1">United Kingdom</h2>
             <h2 className="text-gray-500 font-medium">1,74,688 Travellers</h2>
