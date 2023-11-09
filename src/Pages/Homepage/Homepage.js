@@ -5,6 +5,7 @@ import Destination from "../../Components/Homepage/Destination/Destination";
 import FeaturedTours from "../../Components/Homepage/FeaturedTours/FeaturedTours";
 import WhyWeAreBest from "../../Components/Homepage/WhyWeAreBest/WhyWeAreBest";
 import Testimonial from "../../Components/Homepage/Testimonial/Testimonial";
+import ReadyToTravel from "../../Components/Homepage/ReadyToTravel/ReadyToTravel";
 
 const Homepage = () => {
   return (
@@ -15,6 +16,7 @@ const Homepage = () => {
       <FeaturedTours />
       <WhyWeAreBest />
       <Testimonial />
+      <ReadyToTravel />
     </div>
   );
 };

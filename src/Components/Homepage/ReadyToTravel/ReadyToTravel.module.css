@@ -1,0 +1,7 @@
+.bgImg {
+  background-image: url("../../../Assets//ReadyToTravel/car.png");
+  background-size: cover;
+}
+.readyToTravel {
+  font-family: "Kaushan Script", cursive;
+}

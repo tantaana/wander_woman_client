@@ -40,7 +40,7 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mx-4 mb-[200px]">
       <div className="max-w-[1300px] grid grid-cols-4 gap-16">
         <div className="flex flex-col justify-center">
           <div className="flex justify-center">
