@@ -11,11 +11,12 @@ const Navbar = () => {
   const activeLinks = ({ isActive }) => {
     return {
       color: isActive ? "#ea580c" : "",
+      borderBottom: isActive ? "1px solid #ea580c" : "1px solid transparent",
     };
   };
 
   return (
-    <div className="border border-black px-10 py-2">
+    <div className="px-10 py-2">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-4">
           <Link to="tel:+8801628672468">
@@ -41,14 +42,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-4 gap-2">
         <div className="flex justify-start">
           <NavLink to="/" className="duration-300 ease-in-out hover:scale-105">
             <img src={logo} className="w-[110px]" alt="" />
           </NavLink>
         </div>
 
-        <div className="col-span-2 flex justify-center items-center gap-10">
+        <div className="col-span-2 hidden md:flex flex-wrap justify-center items-center gap-y-2 gap-x-6 xl:gap-10">
           <NavLink
             to="/"
             style={activeLinks}
@@ -98,7 +99,7 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-        <div className="flex items-center justify-end gap-4">
+        <div className="hidden md:flex flex-col lg:flex-row items-end lg:items-center justify-end gap-4">
           <GrSearch className="text-2xl hover:cursor-pointer" />
 
           <Link
