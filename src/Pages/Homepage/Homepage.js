@@ -8,10 +8,12 @@ import Testimonial from "../../Components/Homepage/Testimonial/Testimonial";
 import ReadyToTravel from "../../Components/Homepage/ReadyToTravel/ReadyToTravel";
 import OurTrustedPartners from "../../Components/Homepage/OurTrustedPartners/OurTrustedPartners";
 import LatestTravelGuide from "../../Components/Homepage/LatestTravelGuide/LatestTravelGuide";
+import TravelAndAdventure from "../../Components/Homepage/TravelAndAdventure/TravelAndAdventure";
 
 const Homepage = () => {
   return (
     <div>
+      <TravelAndAdventure />
       <BrowseByCategory />
       <WhyChooseUs />
       <Destination />

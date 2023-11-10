@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 import { BsFillHeartFill } from "react-icons/bs";
+import plane from "../../../Assets/TravelAndAdventure/plane.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -80,7 +81,18 @@ const FeaturedTours = () => {
     },
   ];
   return (
-    <div className={`bg-blue-900 py-20 mb-[200px]`}>
+    <div className={`bg-blue-900 py-20 mb-[200px] relative`}>
+      <img
+        src={plane}
+        className="absolute top-0 left-0 w-[200px] md:w-[300px] rotate-90 opacity-30"
+        alt=""
+      />
+
+      <img
+        src={plane}
+        className="absolute bottom-0 right-0 w-[200px] md:w-[300px] opacity-30"
+        alt=""
+      />
       <h2 className={`${styles.featured} text-white text-center text-2xl mb-4`}>
         Tours
       </h2>
